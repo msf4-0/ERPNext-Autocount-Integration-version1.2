@@ -1,0 +1,201 @@
+{
+ "autoname": "field:debtor_code",
+ "creation": "2022-08-18 13:52:47.792502",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "debtor_code",
+  "company_name",
+  "billing_address_1",
+  "billing_address_2",
+  "billing_address_3",
+  "billing_address_4",
+  "btn_copy_address",
+  "delivery_address_1",
+  "delivery_address_2",
+  "delivery_address_3",
+  "delivery_address_4",
+  "phone",
+  "mobile",
+  "fax",
+  "email_address",
+  "attention",
+  "business_nature",
+  "credit_term",
+  "statement_type",
+  "aging_on",
+  "credit_limit",
+  "overdue_limit"
+ ],
+ "fields": [
+  {
+   "description": "Format: XXX-XXXX",
+   "fieldname": "debtor_code",
+   "fieldtype": "Data",
+   "label": "Debtor Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "billing_address_1",
+   "fieldtype": "Data",
+   "label": "Billing Address 1"
+  },
+  {
+   "fieldname": "billing_address_2",
+   "fieldtype": "Data",
+   "label": "Billing Address 2"
+  },
+  {
+   "fieldname": "billing_address_3",
+   "fieldtype": "Data",
+   "label": "Billing Address 3"
+  },
+  {
+   "fieldname": "billing_address_4",
+   "fieldtype": "Data",
+   "label": "Billing Address 4"
+  },
+  {
+   "fieldname": "delivery_address_1",
+   "fieldtype": "Data",
+   "label": "Delivery Address 1"
+  },
+  {
+   "fieldname": "delivery_address_2",
+   "fieldtype": "Data",
+   "label": "Delivery Address 2"
+  },
+  {
+   "fieldname": "delivery_address_3",
+   "fieldtype": "Data",
+   "label": "Delivery Address 3"
+  },
+  {
+   "fieldname": "delivery_address_4",
+   "fieldtype": "Data",
+   "label": "Delivery Address 4"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "attention",
+   "fieldtype": "Data",
+   "label": "Attention"
+  },
+  {
+   "fieldname": "business_nature",
+   "fieldtype": "Data",
+   "label": "Business Nature"
+  },
+  {
+   "fieldname": "credit_term",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Credit Term",
+   "options": "C.O.D.\nNet 30 days\nNet 45 days\nNet 60 days\nNet 90 days"
+  },
+  {
+   "fieldname": "statement_type",
+   "fieldtype": "Select",
+   "label": "Statement Type",
+   "options": "Open Item\nBalance Forward\nNo Statement"
+  },
+  {
+   "fieldname": "aging_on",
+   "fieldtype": "Select",
+   "label": "Aging On",
+   "options": "Invoice Date\nDue Date"
+  },
+  {
+   "default": "30000",
+   "fieldname": "credit_limit",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Credit Limit"
+  },
+  {
+   "default": "0",
+   "fieldname": "overdue_limit",
+   "fieldtype": "Currency",
+   "label": "Credit Term Overdue Limit"
+  },
+  {
+   "fieldname": "btn_copy_address",
+   "fieldtype": "Button",
+   "label": "Copy to delivery address"
+  }
+ ],
+ "modified": "2022-08-25 14:57:47.421143",
+ "modified_by": "Administrator",
+ "module": "Autocount",
+ "name": "Debtor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

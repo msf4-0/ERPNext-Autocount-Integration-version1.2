@@ -1,0 +1,102 @@
+{
+ "autoname": "field:doc_no",
+ "creation": "2022-08-18 16:28:33.301663",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_no",
+  "debtor_code",
+  "date",
+  "ship_info",
+  "item_table",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "Invoice No.",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "debtor_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Debtor Code",
+   "options": "Debtor",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "ship_info",
+   "fieldtype": "Data",
+   "label": "Ship Info"
+  },
+  {
+   "fieldname": "item_table",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Child Table"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "total",
+   "fieldtype": "Read Only",
+   "label": "Total"
+  }
+ ],
+ "modified": "2022-08-24 14:07:35.895518",
+ "modified_by": "Administrator",
+ "module": "Autocount",
+ "name": "Autocount Sales Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

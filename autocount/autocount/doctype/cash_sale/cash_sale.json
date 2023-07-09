@@ -1,0 +1,139 @@
+{
+ "autoname": "field:doc_no",
+ "creation": "2022-08-23 14:19:01.848299",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_no",
+  "debtor_code",
+  "date",
+  "ship_info",
+  "item_table",
+  "total",
+  "payment_mode",
+  "cash_payment",
+  "btn_pay_total",
+  "change",
+  "outstanding"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "Cash Sale No.",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "debtor_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Debtor Code",
+   "options": "Debtor",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "ship_info",
+   "fieldtype": "Data",
+   "label": "Ship Info"
+  },
+  {
+   "fieldname": "item_table",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Child Table"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "total",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "1 - Cash\n4 - Credit Sale"
+  },
+  {
+   "default": "0",
+   "fieldname": "cash_payment",
+   "fieldtype": "Currency",
+   "label": "Cash Payment"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "outstanding",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Outstanding"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "change",
+   "fieldtype": "Currency",
+   "label": "Change",
+   "read_only": 1
+  },
+  {
+   "fieldname": "btn_pay_total",
+   "fieldtype": "Button",
+   "label": "Pay Total"
+  }
+ ],
+ "modified": "2022-08-23 16:36:12.097084",
+ "modified_by": "Administrator",
+ "module": "Autocount",
+ "name": "Cash Sale",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

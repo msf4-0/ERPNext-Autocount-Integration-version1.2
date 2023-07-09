@@ -1,0 +1,47 @@
+{
+ "creation": "2022-08-01 16:27:47.475330",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "uom",
+  "new_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Stock Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UOM",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "new_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "New Cost"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-08-02 21:26:18.676461",
+ "modified_by": "Administrator",
+ "module": "Autocount",
+ "name": "Update Cost Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

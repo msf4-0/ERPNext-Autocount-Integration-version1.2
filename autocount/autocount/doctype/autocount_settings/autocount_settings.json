@@ -1,0 +1,55 @@
+{
+ "allow_copy": 1,
+ "creation": "2022-08-10 10:39:18.282853",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ip_address",
+  "port",
+  "btn_test_connection"
+ ],
+ "fields": [
+  {
+   "description": "Get IP Address from Wireless LAN adapter Wi-Fi IPv4 address using ipconfig (Window) or ifconfig (Linux) command. Leave blank to set to default localhost: (host.docker.internal). ",
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IP Address"
+  },
+  {
+   "fieldname": "btn_test_connection",
+   "fieldtype": "Button",
+   "label": "Test Connection"
+  },
+  {
+   "description": "Leave blank to set to default: 8888.",
+   "fieldname": "port",
+   "fieldtype": "Data",
+   "label": "Port"
+  }
+ ],
+ "hide_toolbar": 1,
+ "issingle": 1,
+ "modified": "2022-08-25 11:03:45.918827",
+ "modified_by": "Administrator",
+ "module": "Autocount",
+ "name": "Autocount Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

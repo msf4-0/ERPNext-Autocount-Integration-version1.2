@@ -1,0 +1,108 @@
+{
+ "autoname": "field:doc_no",
+ "creation": "2022-08-19 15:26:07.797480",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_no",
+  "debtor_code",
+  "date",
+  "item_table",
+  "btn_add_chosen",
+  "chosen_table",
+  "btn_clear_all"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "Cancel SO No.",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "debtor_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Debtor Code",
+   "options": "Debtor",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "item_table",
+   "fieldtype": "Table",
+   "label": "Available Items",
+   "options": "Cancel SO Display Child Table"
+  },
+  {
+   "fieldname": "chosen_table",
+   "fieldtype": "Table",
+   "label": "Chosen Items",
+   "options": "Cancel SO Child Table"
+  },
+  {
+   "fieldname": "btn_add_chosen",
+   "fieldtype": "Button",
+   "label": "Add to chosen"
+  },
+  {
+   "fieldname": "btn_clear_all",
+   "fieldtype": "Button",
+   "label": "Clear all"
+  }
+ ],
+ "modified": "2022-08-23 09:40:49.519128",
+ "modified_by": "Administrator",
+ "module": "Autocount",
+ "name": "Cancel SO",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

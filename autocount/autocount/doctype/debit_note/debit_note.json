@@ -1,0 +1,108 @@
+{
+ "autoname": "field:doc_no",
+ "creation": "2022-08-24 12:34:38.253063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_no",
+  "debtor_code",
+  "date",
+  "reason",
+  "our_invoice_no",
+  "item_table",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "Debit Note No.",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "debtor_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Debtor Code",
+   "options": "Debtor",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "our_invoice_no",
+   "fieldtype": "Data",
+   "label": "Our Invoice No."
+  },
+  {
+   "fieldname": "item_table",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Child Table"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "total",
+   "fieldtype": "Read Only",
+   "label": "Total"
+  }
+ ],
+ "modified": "2022-08-24 12:34:38.253063",
+ "modified_by": "Administrator",
+ "module": "Autocount",
+ "name": "Debit Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

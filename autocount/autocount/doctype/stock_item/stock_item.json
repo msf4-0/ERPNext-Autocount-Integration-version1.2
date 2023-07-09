@@ -1,0 +1,135 @@
+{
+ "autoname": "field:item_code",
+ "creation": "2022-07-29 15:44:06.599662",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "description",
+  "uom",
+  "unit_cost",
+  "price",
+  "costing_method",
+  "item_group",
+  "lead_time",
+  "duty_rate",
+  "tax_type",
+  "purchase_tax_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_cost",
+   "fieldtype": "Data",
+   "label": "Standard Cost",
+   "precision": "2"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "Price",
+   "precision": "2"
+  },
+  {
+   "default": "2 - FIFO",
+   "fieldname": "costing_method",
+   "fieldtype": "Select",
+   "label": "Costing Method",
+   "options": "0 - Fixed Cost\n1 - Weighted Average\n2 - FIFO\n3 - LIFO"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Stock Group"
+  },
+  {
+   "fieldname": "lead_time",
+   "fieldtype": "Data",
+   "label": "Lead Time"
+  },
+  {
+   "fieldname": "duty_rate",
+   "fieldtype": "Float",
+   "label": "Duty Rate (%)"
+  },
+  {
+   "fieldname": "tax_type",
+   "fieldtype": "Select",
+   "label": "Supply Tax Code",
+   "options": "SR-0"
+  },
+  {
+   "fieldname": "purchase_tax_type",
+   "fieldtype": "Select",
+   "label": "Purchase Tax Code",
+   "options": "TX-0\nZP"
+  }
+ ],
+ "modified": "2022-08-12 12:33:48.102866",
+ "modified_by": "Administrator",
+ "module": "Autocount",
+ "name": "Stock Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

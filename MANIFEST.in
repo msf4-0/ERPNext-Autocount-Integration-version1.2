@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include autocount *.css
+recursive-include autocount *.csv
+recursive-include autocount *.html
+recursive-include autocount *.ico
+recursive-include autocount *.js
+recursive-include autocount *.json
+recursive-include autocount *.md
+recursive-include autocount *.png
+recursive-include autocount *.py
+recursive-include autocount *.svg
+recursive-include autocount *.txt
+recursive-exclude autocount *.pyc

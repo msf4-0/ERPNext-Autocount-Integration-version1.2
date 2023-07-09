@@ -1,0 +1,142 @@
+{
+ "autoname": "field:item_group",
+ "creation": "2022-08-01 11:19:11.824246",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_group",
+  "description",
+  "sales_code",
+  "cash_sales_code",
+  "sales_return_code",
+  "sales_discount_code",
+  "purchase_code",
+  "cash_purchase_code",
+  "purchase_return_code",
+  "purchase_discount_code",
+  "balance_stock_code",
+  "btn_load_default"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "label": "Item Group",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "sales_code",
+   "fieldtype": "Select",
+   "label": "Sales Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cash_sales_code",
+   "fieldtype": "Select",
+   "label": "Cash Sales Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_return_code",
+   "fieldtype": "Select",
+   "label": "Sales Return Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_discount_code",
+   "fieldtype": "Select",
+   "label": "Sales Discount Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purchase_code",
+   "fieldtype": "Select",
+   "label": "Purchase Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cash_purchase_code",
+   "fieldtype": "Select",
+   "label": "Cash Purchase Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purchase_return_code",
+   "fieldtype": "Select",
+   "label": "Purchase Return Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purchase_discount_code",
+   "fieldtype": "Select",
+   "label": "Purchase Discount Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "balance_stock_code",
+   "fieldtype": "Select",
+   "label": "Balance Stock Code",
+   "options": "330-0000 STOCK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "btn_load_default",
+   "fieldtype": "Button",
+   "label": "Load default accounts"
+  }
+ ],
+ "modified": "2022-08-25 16:15:21.748922",
+ "modified_by": "Administrator",
+ "module": "Autocount",
+ "name": "Stock Group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
